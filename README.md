@@ -16,6 +16,7 @@ The current hardware configuration uses two of the following GPUs: **ASUS DUAL R
 ### Identify installed GPUs
 
 ```sh
+# Command
 lspci | grep -e VGA
 ```
 
@@ -34,6 +35,7 @@ lspci | grep -e VGA
 ### Setup RPM Fusion Repositories
 
 ```sh
+# Commands
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
@@ -42,6 +44,7 @@ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfre
 ## Install akmod package for the nvidia kernel modules
 
 ```sh
+# Command
 sudo dnf install akmod-nvidia
 ```
 
@@ -79,6 +82,7 @@ Transaction Summary:
 ## Install CUDA driver tools
 
 ```sh
+# Command
 sudo dnf install xorg-x11-drv-nvidia-cuda
 ```
 
@@ -100,6 +104,7 @@ Transaction Summary:
 ## Check version info for the nvidia kernel module
 
 ```sh
+# Command
 modinfo -F version nvidia
 ```
 
@@ -111,6 +116,7 @@ modinfo -F version nvidia
 ## List installed nvidia-cuda packages
 
 ```sh
+# Command
 rpm -qa | grep nvidia-cuda | sort
 ```
 
@@ -124,6 +130,7 @@ xorg-x11-drv-nvidia-cuda-libs-580.159.03-1.fc42.x86_64
 ## List files in the CUDA driver package
 
 ```sh
+# Command
 rpm -ql xorg-x11-drv-nvidia-cuda-580.159.03-1.fc42.x86_64
 ```
 
@@ -145,6 +152,7 @@ rpm -ql xorg-x11-drv-nvidia-cuda-580.159.03-1.fc42.x86_64
 ## List files in the CUDA libraries package
 
 ```sh
+# Command
 rpm -ql xorg-x11-drv-nvidia-cuda-libs-580.159.03-1.fc42.x86_64
 ```
 
@@ -186,6 +194,7 @@ rpm -ql xorg-x11-drv-nvidia-cuda-libs-580.159.03-1.fc42.x86_64
 * https://docs.nvidia.com/deploy/nvidia-smi/index.html
 
 ```sh
+# Command
 nvidia-smi
 ```
 
@@ -226,6 +235,7 @@ Sun Jul  5 10:45:10 2026
 * https://github.com/Syllo/nvtop
 
 ```sh
+# Command
 sudo dnf install nvtop
 ```
 
@@ -233,6 +243,7 @@ sudo dnf install nvtop
 ## Run NVTOP
 
 ```sh
+# Command
 nvtop
 ```
 
