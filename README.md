@@ -1,7 +1,7 @@
 
 # Installation of NVIDIA Graphics Driver
 
-This repository describes how to install the **RPM Fusion** NVIDIA Graphics Driver on **Linux Fedora 42**.
+This repository describes how to install the **RPM Fusion** NVIDIA Graphics Driver on **Fedora Linux**.
 
 The current hardware configuration uses two of the following GPUs: **ASUS DUAL RTX 5060 Ti OC Edition 16 GB**
 
